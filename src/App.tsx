@@ -1,13 +1,15 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react'
-import { ReactComponent as Logo } from './logo.svg'
 import { Button } from 'antd'
+import { ReactComponent as Logo } from './logo.svg'
 import './App.css'
 
 function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header ">
-        <Logo width={'300px'} className="App-logo bg-[red]" />
+        <Logo width="300px" className="App-logo bg-[red]" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
