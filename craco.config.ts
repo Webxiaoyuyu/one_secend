@@ -1,4 +1,4 @@
-// const path = require('path')
+const path = require('path')
 // import path from 'path'
 export default {
   devServer: {
@@ -12,8 +12,8 @@ export default {
     }
   },
   webpack: {
-    // alias: {
-    //   '@': path.resolve(__dirname, './src')
-    // }
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
   }
 }

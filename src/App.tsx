@@ -1,8 +1,9 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-undef */
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import { Button } from 'antd'
-import { ReactComponent as Logo } from './logo.svg'
+import { ReactComponent as Logo } from '@/logo.svg'
 import './App.css'
 
 function App(): JSX.Element {
