@@ -18,6 +18,17 @@ module.exports = {
     sourceType: 'module',
     parser: 'babel-eslint'
   },
-  plugins: ['react', '@babel', '@typescript-eslint', 'react-hooks', 'unicorn'],
-  rules: {}
+  plugins: ['react', '@babel', '@typescript-eslint', 'react-hooks', 'unicorn', 'import'],
+  rules: { 'react/jsx-filename-extension': 'off', 'import/extensions': 'off' },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: './tsconfig.json'
+      }
+    }
+  }
 }
